@@ -1,7 +1,7 @@
 export default function Navbar(){
   return(
-  <div className="fixed top-[50px] flex w-full justify-between px-10  text-white">
-      <div className="px-2 bg-primary-200 flex justify-between w-full">
+  <div className="fixed z-10 top-[50px] flex w-full justify-between px-8  text-white">
+      <div className="px-4 py-2 bg-primary-200 flex justify-between w-full rounded-full">
      <a className="text-2xl font-semibold">wan</a> 
       <div className="flex items-center gap-5 md:gap-12">
         <a>About </a>
