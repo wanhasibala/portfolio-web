@@ -20,13 +20,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex gap-2 items-end justify-around">
-        <div className="text-6xl font-bold w-full">
+        <div className="text-2xl md:text-6xl font-bold w-full">
           <div>2024</div>
           <div>WAN HASIB </div>
         </div>
         <div className="font-semibold w-full">
             LOCAL TIME 
-            <div className="font-medium">3:13(GMT+7)</div>
+            <div className="font-normal">3:13(GMT+7)</div>
             </div>
       </div>
     </div>
