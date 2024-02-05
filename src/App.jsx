@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -9,16 +9,19 @@ import Project from "./components/Project.jsx";
 import Offer from "./components/Offer.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import Navbar from './components/navigation.jsx';
 
+gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
     <>
       <Navbar />
-      <div className="hero">
+      <div class="hero">
         <Hero />
       </div>
-      <div id="about">
+      <div id="about" class='bg-secondary-100 rounded-t-[50px]'>
         <Gallery />
       </div>
       <div id="service">
