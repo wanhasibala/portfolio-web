@@ -6,6 +6,23 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        'image-width':['clamp(5rem, 30vw, 17.887rem)'],
+        'image-height':['clamp(13.672rem, 60vw, 46.875rem)'],
+        'gap':['clamp(0.313rem, 3vw, 1.25rem)']
+      },
+      fontSize: {
+        'title': ['clamp(3rem, 9vw, 7rem)'],
+        'heading-1': ['clamp(2.5rem, 6.5vw, 10rem)'],
+        'heading-2': ['clamp(2.4rem, 8vw, 10rem)'],
+        'heading-3': ['clamp(2rem, 5vw, 2.25rem)'], 
+        'special': ['clamp(1.25rem, 4vw, 1.5rem)'],
+        'works-title': ['clamp(1.25rem, 2vw, 1.5rem)'],
+        'body-1': ['clamp(1.1rem, 2vw, 1.3rem)'], 
+        'body-2': ['clamp(1rem, 1.5vw, 1.5rem)'],
+        'body-3': '1.1rem',
+        'body-4': ['clamp(0.75rem, 3vw, 1rem)'],
+      },
        colors: {
         'transparent': 'transparent',
         'primary-200': '#1D233B',

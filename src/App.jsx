@@ -16,7 +16,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
-    <>
+    <div div className="overflow-hidden">
       <Navbar />
       <div class="hero">
         <Hero />
@@ -34,7 +34,7 @@ function App() {
         <Contact />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

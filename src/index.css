@@ -23,12 +23,26 @@ body{
 }
 
 .hamburger-active>span:nth-child(1){
-    @apply rotate-45 
+    @apply rotate-45 origin-top-left pl-3 
 }
 
 .hamburger-active>span:nth-child(3){  
-    @apply -rotate-45 origin-bottom-left
+    @apply -rotate-45 origin-bottom-left pr-1
 }
 .hamburger-active>span:nth-child(2){
     @apply scale-0;
 } 
+        
+.word {
+  position: relative;
+}
+.line-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0d0d0d;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
