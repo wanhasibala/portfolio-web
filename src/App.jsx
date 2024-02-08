@@ -21,8 +21,8 @@ function App() {
       <div class="hero">
         <Hero />
       </div>
-      <div id="about" class='bg-secondary-100 rounded-t-[50px]'>
-        <Gallery />
+      <div id="about" className="mb-20">
+        <Gallery  />
       </div>
       <div id="service">
         <Offer />

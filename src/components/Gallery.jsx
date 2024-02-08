@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import SplitText from "gsap-trial/SplitText";
+import Photo from "./ui/photo";
 
 export default function Galery() {
   gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -35,6 +36,31 @@ export default function Galery() {
       scrub: true,
     },
   });
+  gsap.to(".photos", {
+    x: -1000,
+    ease: "none",
+
+    scrollTrigger: {
+      trigger: "photos",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true,
+    },
+   
+  });
+  gsap.to(".photos-2", {
+    x: 1000,
+    ease: "none",
+
+    scrollTrigger: {
+      trigger: "photos",
+      // start: "top bottom", // the default values
+      // end: "bottom top",
+      scrub: true,
+    },
+   
+  });
+
   //split text animation
 
   let text = new SplitText(".split", { type: "words" });
@@ -45,8 +71,8 @@ export default function Galery() {
     ease: "none",
     scrollTrigger: {
       trigger: ".trigger",
-      start: "top center",
-      end: "bottom center",
+      start: "top 70%",
+      end: "bottom 70%",
       scrub: true,
     },
   });
@@ -83,7 +109,7 @@ export default function Galery() {
         </div>
       </div>
 
-      <div className="  max-w-[1440px] mx-auto px-4 md:px-12 text-heading-3 font-medium text-center my-5 text-secondary-800 trigger">
+      <div className="  max-w-[1440px] mx-auto px-4 md:px-12 text-heading-3 font-medium text-center my-10 text-secondary-800 trigger">
         <div className="split">
           I am a Product Design with a keen eye for aesthetics and a commitment
           to crafting digital experiences that not only meet but exceed user
@@ -91,20 +117,27 @@ export default function Galery() {
         </div>
       </div>
 
-      {/* <div class=" flex gap-[20px]  w-[100vw] my-2.5">
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-      </div>
-      <div class=" flex gap-[20px] overflow-scroll w-[100vw] my-2.5">
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-        <div className="w-[120px] h-[67.5px] bg-secondary-700">first</div>
-      </div> */}
+      <div className="my-10 gap-5 ">
+        <div className=" inline-flex mb-5 gap-5 ml-[100px] photos">
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+        </div>
 
-      <style></style>
+        <div className=" inline-flex gap-5  -ml-[800px] photos-2">
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="Intersect.webp" alt="1" />
+        </div>
+      </div>
     </>
   );
 }
