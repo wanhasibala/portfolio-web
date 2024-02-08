@@ -40,14 +40,14 @@ export default function Navbar() {
             </button>
             <nav id="nav-menu" class="hidden lg:block ">
               <div class="absolute right-2 mt-6 p-2 rounded-lg text-xl uppercase flex flex-col items-end bg-primary-200 lg:bg-opacity-80 lg:flex lg:flex-row lg:-top-5 lg:rounded-full px-4 gap-5 lg:gap-20 ">
+
                 <a href="#about">About </a>
                 <a href="#work">Work</a>
                 <a href="#service">Services</a>
                 <a
                   href="#contact"
-                  class="text-xl text-primary-200 bg-secondary-100 px-2 py-1 rounded-full  md:px-8 md:py-0"
-                >
-                  contact me
+                  class="text-xl text-primary-200 bg-secondary-100 px-2 py-1 rounded-full  md:px-8 md:py-0">
+                                 contact me
                 </a>
               </div>
             </nav>
