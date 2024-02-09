@@ -71,16 +71,16 @@ export default function Galery() {
     ease: "none",
     scrollTrigger: {
       trigger: ".trigger",
-      start: "top 70%",
-      end: "bottom 70%",
+      start: "top center",
+      end: "center center",
       scrub: true,
     },
   });
 
   return (
     <>
-      <div className=" self-center my-10 flex gap-5 border justify-center mx-auto px-4 relative  h-[60vh] md:h-[120vh]">
-        <div class=" galery-container  top-50 left-0  gap-gap mx-4 px-4 flex justify-center">
+      <div className=" self-center my-10 flex gap-5  justify-center mx-2  px-4 relative  h-fit">
+        <div class=" galery-container   gap-gap mx-4 px-4 flex justify-center">
           <img
             className="mt-[101px] h-image-height w-image-width box-1"
             alt="Intersect"
@@ -109,8 +109,8 @@ export default function Galery() {
         </div>
       </div>
 
-      <div className="  max-w-[1440px] mx-auto px-4 md:px-12 text-heading-3 font-medium text-center my-10 text-secondary-800 trigger">
-        <div className="split">
+      <div className="  h-[70vh] pt-[30vh] max-w-[1440px] mx-auto  px-4 md:px-12 text-heading-3 font-medium text-center my-10 text-secondary-800 trigger ">
+        <div className="split ">
           I am a Product Design with a keen eye for aesthetics and a commitment
           to crafting digital experiences that not only meet but exceed user
           expectations.

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       spacing: {
-        'image-width':['clamp(5rem, 30vw, 17.887rem)'],
+        'image-width':['clamp(5rem, 20vw, 17.887rem)'],
         'image-height':['clamp(13.672rem, 60vw, 46.875rem)'],
         'gap':['clamp(0.313rem, 3vw, 1.25rem)'],
         'photo-width': ['clamp(7.5rem,20vw, 30rem)'],

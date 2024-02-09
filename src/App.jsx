@@ -5,7 +5,7 @@ import "./App.css";
 import Navbar from "./components/navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Gallery from "./components/Gallery.jsx";
-import Project from "./components/Project.jsx";
+import Work from "./components/Work.jsx";
 import Offer from "./components/Offer.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
@@ -21,14 +21,14 @@ function App() {
       <div class="hero">
         <Hero />
       </div>
-      <div id="about" className="mb-20">
+      <div id="about" className="mb-[100px]">
         <Gallery  />
       </div>
-      <div id="service">
+      <div id="service" >
         <Offer />
       </div>
       <div id="work">
-        <Project />
+        <Work />
       </div>
       <div id="contact">
         <Contact />
