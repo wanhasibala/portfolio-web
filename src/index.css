@@ -9,14 +9,9 @@ body{
     @apply fixed z-10 
 }
 .navbar-fixed>div{
-<<<<<<< HEAD
     @apply bg-opacity-0;
     backdrop-filter: blur(5px) ;
-=======
-    @apply bg-opacity-80;
-    backdrop-filter: blur(5px);
->>>>>>> 82f3917 (kelas)
-}
+    }
 
 .li-nav{
     @apply bg-opacity-80;
