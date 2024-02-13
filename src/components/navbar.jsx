@@ -38,9 +38,9 @@ export default function Navbar() {
               <span class="hamburger-line"></span>
               <span class="hamburger-line origin-bottom-left "></span>
             </button>
-            <nav id="nav-menu" class="hidden lg:block ">
-              <div class="absolute right-2 mt-6 p-2 rounded-lg text-xl uppercase flex flex-col items-end bg-primary-200 lg:bg-opacity-80 lg:flex lg:flex-row lg:-top-5 lg:rounded-full px-4 gap-5 lg:gap-20 ">
 
+            <nav id="nav-menu" class="hidden lg:block duration-250">
+              <div class="absolute right-2 mt-6 p-2 rounded-lg text-xl uppercase flex flex-col items-end bg-primary-200 lg:bg-opacity-80 lg:flex lg:flex-row lg:-top-5 lg:rounded-full px-4 gap-5 lg:gap-20 duration-300">
                 <a href="#about">About </a>
                 <a href="#work">Work</a>
                 <a href="#service">Services</a>
