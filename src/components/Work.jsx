@@ -1,13 +1,12 @@
+import { useRef, useEffect } from "react";
 import Cursor from "./ui/Cursor";
 import Project from "./ui/Project";
 
 export default function Work() {
+  
   return (
     <>
-      <h1 className="max-w-[1440px] text-secondary-800 my-20 text-heading-2 mx-auto text-center">
-        A Quick Glance of My past Project
-      </h1>
-      <div className="max-w-[1440px] my-10 mx-5 lg:mx-auto flex gap-5 overflow-scroll md:overflow-hidden ">
+       <div className="max-w-[1440px] my-10 mx-5 lg:mx-auto flex gap-5 overflow-scroll md:overflow-hidden ">
         <a className="relative w-fit mt-[-1.00px] bg-secondary-200 px-4 py-2 rounded-full  font-regular text-secondary-800 text-[14px] tracking-[0] leading-[normal] whitespace-nowrap">
           3D Design
         </a>
@@ -23,6 +22,9 @@ export default function Work() {
         </a>
       </div>
       <div className="my-20 mx-5 max-w-[1440px] lg:mx-auto ">
+        {/* <div ref={preview}>
+          <img src="/Intersect.webp" alt="hoverimage" ref={previewImg}/>
+        </div> */}
         {/* <Cursor> */}
         <div className="flex flex-row justify-between text-[14px] text-secondary-700 img">
           <p className="min-w-[250px]">TITLE</p>
@@ -32,8 +34,8 @@ export default function Work() {
         </div>
         {/* </Cursor> */}
 
-        <div className="mt-[50px]">
-       <Project /> 
+        <div className="mt-[50px] max-w-[1440px]">
+          <Project />
           <div className="flex flex-row  justify-between text-[16px] text-secondary-700 py-[50px] border-b border-secondary-300 ">
             <p className="min-w-[250px] text-2xl">ADS VIDEO</p>
             <p className="hidden md:flex">Indonesia</p>
@@ -46,6 +48,7 @@ export default function Work() {
           <div className="absolute top-3 left-[70%] text-sm">0</div>
         </div>
       </div>
+      
     </>
   );
 }

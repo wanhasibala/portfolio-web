@@ -11,7 +11,9 @@ export default {
         'image-height':['clamp(13.672rem, 60vw, 46.875rem)'],
         'gap':['clamp(0.313rem, 3vw, 1.25rem)'],
         'photo-width': ['clamp(7.5rem,20vw, 30rem)'],
-        'photo-height': ['clamp(4.219rem,16vh, 16.875rem)']
+        'photo-height': ['clamp(4.219rem,16vh, 16.875rem)'],
+        'image-card': ['clamp(11.875rem, 20vw, 115.625rem)'],
+          
       },
       fontSize: {
         'title': ['clamp(3rem, 9vw, 7rem)'],

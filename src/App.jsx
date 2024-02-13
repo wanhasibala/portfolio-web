@@ -11,6 +11,7 @@ import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { HoverImageLinks } from "./components/ui/HoverImageLink.jsx";
 // import Navbar from './components/navigation.jsx';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,8 +29,10 @@ function App() {
         <Offer />
       </div>
       <div id="work">
-        <Work />
+        {/* <Work /> */}
+        <HoverImageLinks />
       </div>
+
       <div id="contact">
         <Contact />
       </div>

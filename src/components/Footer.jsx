@@ -5,19 +5,50 @@ export default function Footer() {
         <div className="flex flex-col w-full gap-2">
           <div className="border-b border-gray-800 font-semibold ">
             NAVIGATION
-          </div>{" "}
-          <a href="/"> Home </a>
-          <a href="#about">About</a>
-          <a href="#service">Services</a>
-          <a href="#work">Work</a>
-          <a href="#contact"> Contact</a>
+          </div>
+          <a href="/" className="hover:pl-2 duration-500">
+            {" "}
+            Home{" "}
+          </a>
+          <a href="#about" className="hover:pl-2 duration-500">
+            About
+          </a>
+          <a href="#service" className="hover:pl-2 duration-500">
+            Services
+          </a>
+          <a href="#work" className="hover:pl-2 duration-500">
+            Work
+          </a>
+          <a href="#contact" className="hover:pl-2 duration-500">
+            {" "}
+            Contact
+          </a>
         </div>
         <div className="flex flex-col w-full gap-2">
           <div className="border-b border-gray-800 font-semibold">SOCIAL</div>
-          Linkedin <br />
-          Github <br />
-          Instagram <br />
-          Twitter <br />
+          <a
+            href="https://www.linkedin.com/in/wanhasib/"
+            className="hover:pl-2 duration-500"
+          >
+            Linkedin
+          </a>
+          <a
+            href="https://github.com/wanhasibala"
+            className="hover:pl-2 duration-500"
+          >Github 
+          </a>
+          <a
+            href="https://www.instagram.com/wanhasib.ala"
+            className="hover:pl-2 duration-500"
+          >
+           Istagram 
+          </a>
+          <a
+            href="https://twitter.com/wanhasib_ala"
+            className="hover:pl-2 duration-500"
+          >
+           Twitter 
+          </a>
         </div>
       </div>
       <div className="flex gap-2 items-end justify-around">
