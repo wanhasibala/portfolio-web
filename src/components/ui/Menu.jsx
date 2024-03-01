@@ -5,7 +5,7 @@ export default function Menu({ toggleHamburger, isActive }) {
     <div
       onClick={toggleHamburger}
       className={`absolute top-0 right-0  h-[100vh] w-full py-32 md:px-20 px-10 text-4xl bg-primary-200 max-w-lg duration-500 ease-in-out  transition-all   text-white flex flex-col  justify-between  ${
-        isActive && "-right-[32rem] "
+        isActive && "right-[-32rem] "
       }`}
     >
       <div className="text-xl border-b pb-2">Navigation</div>
