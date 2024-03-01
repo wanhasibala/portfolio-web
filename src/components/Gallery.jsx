@@ -66,7 +66,7 @@ export default function Galery() {
   let text = new SplitText(".split", { type: "words" });
 
   gsap.from(text.words, {
-    opacity: 0.15,
+    opacity: 0.6,
     stagger: 1,
     ease: "none",
     scrollTrigger: {
@@ -109,7 +109,7 @@ export default function Galery() {
         </div>
       </div>
 
-      <div className="  h-[70vh] pt-[30vh] max-w-[1440px] mx-auto  px-4 md:px-12 text-heading-3 font-medium text-center my-10 text-secondary-800 trigger ">
+      <div className="  mb-20 lg:h-[70vh] pt-[30vh] max-w-[1440px] mx-auto  px-4 md:px-12 text-heading-3 font-medium text-center my-10 text-secondary-800 trigger ">
         <div className="split ">
           I am a Product Design with a keen eye for aesthetics and a commitment
           to crafting digital experiences that not only meet but exceed user

@@ -14,18 +14,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { HoverImageLinks } from "./components/ui/HoverImageLink.jsx";
 // import Navbar from './components/navigation.jsx';
 
-gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
-    <div div className="overflow-hidden">
+    <>
+    <div className="overflow-hidden">
+
       <Navbar />
       <div class="hero">
         <Hero />
       </div>
-      <div id="about" className="mb-[100px]">
-        <Gallery  />
+      <div id="gallery" className="mb-[100px]">
+        <Gallery />
       </div>
-      <div id="service" >
+      <div id="service">
         <Offer />
       </div>
       <div id="work">
@@ -38,6 +39,7 @@ function App() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }
 

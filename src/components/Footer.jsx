@@ -1,4 +1,13 @@
 export default function Footer() {
+  const time = document.getElementById("datetime");
+  setInterval(() => {
+    const now = new Date();
+    let h =now.getHours();
+    let m = now.getMinutes();
+    let clock = h + ":" + m  ;
+    time.innerHTML = clock;
+  }, 1000);
+
   return (
     <div className="my-20 max-w-[1440px] mx-5 lg:mx-auto lg:px-5  ">
       <div className="flex gap-5 justify-around mb-10">
@@ -35,19 +44,20 @@ export default function Footer() {
           <a
             href="https://github.com/wanhasibala"
             className="hover:pl-2 duration-500"
-          >Github 
+          >
+            Github
           </a>
           <a
             href="https://www.instagram.com/wanhasib.ala"
             className="hover:pl-2 duration-500"
           >
-           Istagram 
+            Istagram
           </a>
           <a
             href="https://twitter.com/wanhasib_ala"
             className="hover:pl-2 duration-500"
           >
-           Twitter 
+            Twitter
           </a>
         </div>
       </div>
@@ -58,7 +68,7 @@ export default function Footer() {
         </div>
         <div className="font-semibold w-full">
           LOCAL TIME
-          <div className="font-normal">3:13(GMT+7)</div>
+          <div className="font-normal" id="datetime"></div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export const HoverImageLinks = () => {
         A Quick Glance of My past Project
       </h1>
 
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-[1440px] ">
         <Link heading="ADS VIDEO" year="2018" imgSrc="/Intersect.webp" href="#" />
         <Link heading="Clients" year="2019" imgSrc="/Intersect.webp" href="#" />
         <Link
@@ -72,7 +72,7 @@ const Link = ({ heading, imgSrc, year, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className=" relative z-10 block text-4xl  text-secondary-700 transition-colors duration-500 group-hover:text-secondary-700 md:text-6xl"
+          className=" relative z-5 block text-4xl  text-secondary-700 transition-colors duration-500 group-hover:text-secondary-700 md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
