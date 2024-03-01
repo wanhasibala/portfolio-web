@@ -15,8 +15,10 @@ export default function Navbar() {
           >
             wan
           </a>
+
           <Button toggleHamburger={toggleHamburger} isActive={!isActive} />
           <Menu toggleHamburger={toggleHamburger} isActive={!isActive} />
+
         </div>
       </header>
     </>
