@@ -6,7 +6,8 @@ const projects = [
     title: "Document App",
     year: "2017",
     src: "Intersect.webp",
-    color: '#000000'
+    color: '#000000',
+    href:'https://github.com/wanhasibala/document'
   },
   {
     title: "Ads Video",
@@ -39,17 +40,18 @@ export const HoverImageLinks = () => {
               setModal={setModal}
               key={index}
               year={project.year}
+              href={project.href}
             />
           );
         })}
        
       </div>
-      <Modal modal={modal} projects={projects}/>
+      <Modal modal={modal} projects={projects} />
     </section>
   );
 };
 
-function Project({ title, setModal, year, index }) {
+function Project({ title, setModal, year, index, href}) {
   return (
     <div
       onMouseEnter={() => {
@@ -60,8 +62,8 @@ function Project({ title, setModal, year, index }) {
       }}
       className="flex w-full justify-between items-center py-12 px-12 hover:px-8 border-t cursor-pointer transition-all duration-200 hover:opacity-50"
     >
-      <h2 className="text-6xl font-normal duration-500 ">{title}</h2>
-      <h1 className="duration-500 font-light ">{year}</h1>
+      <h2 className="text-6xl font-normal duration-500 "><a href={href}>{title}</a></h2>
+      <h1 className="duration-500 font-light "><a href={href}>{year}</a></h1>
     </div>
   );
 }

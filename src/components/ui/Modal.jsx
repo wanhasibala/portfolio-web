@@ -19,7 +19,7 @@ const scaleAnimation = {
     transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] },
   },
 };
-export default function Modal({ modal, projects }) {
+export default function Modal({ modal, projects, href }) {
   const modalContainer = useRef(null);
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
@@ -117,11 +117,11 @@ export default function Modal({ modal, projects }) {
       ></motion.div>
       <motion.div
         ref={cursorLabel}
-        className="w-[80px] h-[80px] rounded-full bg-primary-200 color-white absolute z-[1] flex items-center justify-center text-[14px] font-light pointer-events-none bg-transparent"
+        className="w-[80px] h-[80px] rounded-full bg-primary-200 color-white absolute z-[1] flex items-center justify-center text-[14px] font-light pointer-events-none bg-transparent text-white"
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-      ></motion.div>
+      >View</motion.div>
     </>
   );
 }
