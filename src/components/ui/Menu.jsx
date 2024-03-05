@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import Magnetic from "../../common/Magnetic/Magnetic";
 
 export default function Menu({ toggleHamburger, isActive }) {
+  const [scroll, setScroll] = useState(null);
+
+  useEffect(() => {
+    import("locomotive-scroll").then((locomotiveModule) => {
+      const locomotivescroll = new locomotiveModule.default();
+      setScroll(locomotivescroll);
+    });
+  }, []);
+
+  const handleScroll = (id) => {
+    scroll && scroll.scrollTo(id, { duration: 2 });
+    SecurityPolicyViolationEvent(false);
+  };
   return (
     <div
       onClick={toggleHamburger}
@@ -12,20 +26,51 @@ export default function Menu({ toggleHamburger, isActive }) {
       <div className="text-xl border-b pb-2">Navigation</div>
       <div className="flex flex-col  gap-5">
         <Magnetic>
-          <a href="/">Home</a>
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+          >
+            Home
+          </Link>
         </Magnetic>
         <Magnetic>
-
-        <a href="#gallery">Gallery</a>
+          <Link
+            to="gallery"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
+            Gallery
+          </Link>
         </Magnetic>
-        {/* <a href="#services">Services</a> */}
         <Magnetic>
-
-        <a href="#work">Project</a>
+          <Link
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+          >
+            Project
+          </Link>
         </Magnetic>
         <Magnetic>
-          
-        <a href="#contact">Contact</a>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="cursor-pointer"
+          >
+            Contact
+          </Link>
         </Magnetic>
       </div>
       <div>

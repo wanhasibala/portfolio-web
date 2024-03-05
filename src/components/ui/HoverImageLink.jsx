@@ -12,14 +12,16 @@ const projects = [
   {
     title: "Ads Video",
     year: "2017",
-    src: "Intersect.webp",
-    color: '#8c8c8c'
+    src: "Ads Video.webp",
+    color: '#8c8c8c',
+    href: 'https://drive.google.com/file/d/1lCTDH_EttkNq8K1PDg7_8-l6OOJ1byKH/view?usp=sharing'
   },
   {
     title: "Edu Credit ",
     year: "2017",
-    src: "Intersect.webp",
-    color:"#EFE8D3"
+    src: "EduCredit.webp",
+    color:"#EFE8D3",
+    href: 'https://www.figma.com/file/hEbCeGd0sCAT2E9CsYzE48/Mobile?type=design&node-id=1780%3A166&mode=design&t=HszvxqfrMy6e7l5i-1'
   },
 ];
 
@@ -31,7 +33,7 @@ export const HoverImageLinks = () => {
         A Quick Glance of My past Project
       </h1>
 
-      <div className="mx-auto max-w-[1440px] mt-24">
+      <div className=" max-w-[1440px] mt-24 mx-auto">
         {projects.map((project, index) => {
           return (
             <Project
@@ -60,9 +62,9 @@ function Project({ title, setModal, year, index, href}) {
       onMouseLeave={() => {
         setModal({ active: false, index });
       }}
-      className="flex w-full justify-between items-center py-12 px-12 hover:px-8 border-t cursor-pointer transition-all duration-200 hover:opacity-50"
+      className="flex w-full justify-between items-center py-12 px-4 lg:px-12 hover:px-8 border-t cursor-pointer transition-all duration-200 hover:opacity-50"
     >
-      <h2 className="text-6xl font-normal duration-500 "><a href={href}>{title}</a></h2>
+      <h2 className="text-heading-4 font-normal duration-500 "><a href={href}>{title}</a></h2>
       <h1 className="duration-500 font-light "><a href={href}>{year}</a></h1>
     </div>
   );

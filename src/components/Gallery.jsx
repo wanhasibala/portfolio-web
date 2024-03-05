@@ -119,22 +119,22 @@ export default function Galery() {
 
       <div className="my-10 gap-5 ">
         <div className=" inline-flex mb-5 gap-5 ml-[100px] photos">
+          <Photo src="render 3.webp" alt="1" />
+          <Photo src="astronout machine.webp" alt="1" />
+          <Photo src="abstract animation.webp" alt="1" />
           <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="jadi.webp" alt="1" />
+          <Photo src="stylized alien landscape 2.webp" alt="1" />
+          <Photo src="Ads Video.webp" alt="1" />
         </div>
 
         <div className=" inline-flex gap-5  -ml-[800px] photos-2">
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
-          <Photo src="Intersect.webp" alt="1" />
+          <Photo src="self harm.webp" alt="1" />
+          <Photo src="p.webp" alt="1" />
+          <Photo src="MacBook-_01.webp" alt="1" />
+          <Photo src="EduCredit.webp" alt="1" />
+          <Photo src="render 3.webp" alt="1" />
+          <Photo src="untitled.webp" alt="1" />
           <Photo src="Intersect.webp" alt="1" />
         </div>
       </div>
