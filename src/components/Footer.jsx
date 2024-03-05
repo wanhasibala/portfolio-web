@@ -1,10 +1,11 @@
+import { Link } from "react-scroll";
 export default function Footer() {
   const time = document.getElementById("datetime");
   setInterval(() => {
     const now = new Date();
-    let h =now.getHours();
+    let h = now.getHours();
     let m = now.getMinutes();
-    let clock = h + ":" + m  ;
+    let clock = h + ":" + m;
     time.innerHTML = clock;
   }, 1000);
 
@@ -15,23 +16,43 @@ export default function Footer() {
           <div className="border-b border-gray-800 font-semibold ">
             NAVIGATION
           </div>
-          <a href="/" className="hover:pl-2 duration-500">
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className=" cursor-pointer hover:pl-2 duration-500"
+          >
             {" "}
             Home{" "}
-          </a>
-          <a href="#about" className="hover:pl-2 duration-500">
+          </Link>
+          <Link  
+          to="Gallery"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+             className=" cursor-pointer hover:pl-2 duration-500">
             About
-          </a>
-          <a href="#service" className="hover:pl-2 duration-500">
-            Services
-          </a>
-          <a href="#work" className="hover:pl-2 duration-500">
-            Work
-          </a>
-          <a href="#contact" className="hover:pl-2 duration-500">
+          </Link>
+          <Link to="work"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+             className="cursor-pointer hover:pl-2 duration-500">
+           Work 
+          </Link>
+          <Link  to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className=" cursor-pointer hover:pl-2 duration-500">
             {" "}
             Contact
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col w-full gap-2">
           <div className="border-b border-gray-800 font-semibold">SOCIAL</div>
