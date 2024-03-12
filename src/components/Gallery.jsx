@@ -1,11 +1,10 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitType from "split-type";
-import SplitText from "gsap-trial/SplitText";
 import Photo from "./ui/photo";
 
 export default function Galery() {
-  gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger );
   gsap.to(".box-2", {
     y: 202,
     ease: "none",
@@ -63,7 +62,7 @@ export default function Galery() {
 
   //split text animation
 
-  let text = new SplitText(".split", { type: "words" });
+  let text = new SplitType(".split", { type: "words" });
 
   gsap.from(text.words, {
     opacity: 0.6,
